@@ -5,12 +5,17 @@ const helpText = `Usage: janet [OPTIONS...]
 
 Subcommands:
     --help      Display help text and exit
+	--setup		Prompt for your OpenAI API key if not found
     --feedback  Get feedback on a git diff
 `;
 
 const commands = {
 	help: () => {
 		console.log(helpText);
+	},
+
+	setup: async () => {
+		await getGPT4();
 	},
 
 	feedback: async () => {

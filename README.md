@@ -7,6 +7,10 @@ The 'swiss army knife' for building software with AI.
 Get feedback on your latest commit. The first run will prompt you for your OpenAI API key.
 
 ```
+janet --setup
+```
+
+```
 git diff HEAD~ | janet --feedback
 ```
 
@@ -33,5 +37,5 @@ sudo deno compile --unstable-kv --allow-all --output /usr/local/bin/janet main.t
 ```
 
 ```
-janet
+janet --setup
 ```
